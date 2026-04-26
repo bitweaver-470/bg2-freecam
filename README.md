@@ -1,47 +1,45 @@
-# BUNNY GARDEN 2 - フリーカメラ＆チェキ拡張MOD
+# BG_FreeCamera — BUNNY GARDEN 2 フリーカメラMOD
 
-BUNNY GARDEN 2 のフリーカメラを改善し、チェキ撮影を快適にするMODセットです。
+フリーカメラ＋チェキ時間凍結＋GUI非表示＋ライトオンオフが可能なmod
 
-## MOD一覧
+## 機能
 
-### BG_FreeCamera
-
-- **Shift＝UIモード**: Shiftキーを押している間、カメラ位置を固定したままカーソルが解放され、ゲーム内のボタン操作が可能。チェキ撮影中の衣装変更やポーズ変更などに便利
-- **F11＝GUI非表示**: すべてのUIを非表示にしてクリーンなスクリーンショットが撮れます
-
-### BG_ChekiTimeStop
-チェキ撮影中（PHOTOGRAPHING状態）の制限時間を自動的に凍結します。時間を気にせず自由にカメラアングルを調整できます。
+- **フリーカメラ (F1)**: 低速で繊細なカメラワークが可能（Ctrlでさらに低速）
+- **UIモード (Shift押し中)**: カメラ位置を固定したままカーソルが解放され、ゲーム内のボタン操作が可能。チェキ撮影中の衣装変更やShift+クリックでの撮影に便利
+- **GUI非表示 (F11)**: すべてのUIを非表示にしてクリーンなスクリーンショットが撮れます
+- **ライトトグル (F12)**: シーン内のライトをON/OFF切替
+- **チェキ時間凍結**: チェキ撮影中の制限時間を自動的に凍結。時間を気にせず自由にカメラアングルを調整可能
+- **カメラ位置固定 (F6)**: フリーカメラの位置を固定したままゲームを進行
 
 ## 必要環境
 
 - BUNNY GARDEN 2（Steam版）
 - BepInEx 6 Bleeding Edge（Unity.Mono, x64）
-- [BunnyGarden2FixMod](https://github.com/noeleve/BunnyGarden2FixMod)（BG_FreeCameraの前提MOD）
 
 ## インストール
 
 1. BepInEx 6 BE（Unity.Mono, win-x64）をゲームフォルダに導入
-2. BunnyGarden2FixMod を導入
-3. 一度ゲームを起動して閉じる（`BepInEx/plugins` フォルダが生成されます）
-4. 使いたいMODの `.dll` ファイルを `BepInEx/plugins/` にコピー
-5. ゲームを起動
+2. 一度ゲームを起動して閉じる（`BepInEx/plugins` フォルダが生成されます）
+3. `BG_FreeCamera.dll` を `BepInEx/plugins/` にコピー
+4. ゲームを起動
 
 ## 操作方法
 
 | キー | 機能 |
 |------|------|
-| F5 | フリーカメラ ON/OFF（FixMod機能） |
-| F6 | カメラ位置固定モード ON/OFF（FixMod機能） |
+| F1 | フリーカメラ ON/OFF |
+| F6 | カメラ位置固定モード ON/OFF |
 | WASD / 矢印キー | カメラ移動 |
 | Q / E | カメラ上昇 / 下降 |
 | Ctrl | 低速移動 |
 | マウス左/右クリック | マウスビュー切替 |
 | Shift（押し中） | UIモード（カーソル解放＋ゲーム操作可能） |
 | F11 | 全UI非表示/表示 |
+| F12 | ライト ON/OFF |
 
 ## 注意事項
 
-- BG_FreeCamera は BunnyGarden2FixMod が必須です（単体では動作しません）
-- BG_ChekiTimeStop は単体で動作します
+- 単体で動作します（他のMODは不要）
+- BunnyGarden2FixMod との併用も可能です（FixMod側のフリーカメラは自動的に無効化されます）
 - セーブデータには影響しません
-- UI非表示中もF11で復帰できます
+- フリーカメラ中はゲーム内のキー操作（ポーズ選択等）がブロックされます。Shiftを押してUIモードに切り替えるとゲーム操作が可能になります
